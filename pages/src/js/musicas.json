@@ -1,0 +1,32 @@
+[
+    {
+        "src": "https://t4.bcbits.com/stream/1d9e5504e8def9c029570c55ba76cea1/mp3-128/4114167957?p=0&ts=1718661491&t=d64218d3f7745e9ebe076974b4c8135fb5d8a37b&token=1718661491_917460a4416e53cae1755673ed5098f31d04c3ad",
+        "poster": "../src/img/shapes.jpg",
+        "duration": "3:42"
+    },
+    {
+        "src": "https://t4.bcbits.com/stream/2c47819c5b48bda2a2d88e1af7ed3314/mp3-128/2825590009?p=0&ts=1718662699&t=5e4775517f2788cea03ebdbce0694e144dff8de8&token=1718662699_94e54685ba253212ae7b809f3a1eb2073468865c",
+        "poster": "../src/img/narvent.jpg",
+        "duration": "4:04"
+    },
+    {
+        "src": "https://t4.bcbits.com/stream/cf161acfea6ddf56f675a5c5c3168100/mp3-128/4166922548?p=0&ts=1718666082&t=c11e2dfe13ab6bf1eb3c4ef2303c05bbd051321b&token=1718666082_601e746e5a3527a8391be0b330e124ad3b473bc8",
+        "poster": "https://f4.bcbits.com/img/a0194424716_16.jpg",
+        "duration": "3:25"
+    },
+    {
+        "src": "https://t4.bcbits.com/stream/14843eda45b09b40e71b68d33971dea1/mp3-128/3973209589?p=0&ts=1718663103&t=ac1b216a1426aeb5dc2f8e4de2111c5012a8f9b8&token=1718663103_a8082c2caa3f90f3ec59e69ee3e4d0b035638876",
+        "poster": "../src/img/in the bleak midwinter.jpg",
+        "duration": "4:12"
+    },
+    {
+        "src": "https://t4.bcbits.com/stream/6d66d118309797acb35e1fc66d40c0ee/mp3-128/4185629229?p=0&ts=1718663173&t=7c09605537c9485343cbad7c5efe4620241655d1&token=1718663173_74a383e609f0e869d2b506f63494132d726d7654",
+        "poster": "../src/img/parallel.jpg",
+        "duration": "5:00"
+    },
+    {
+        "src": "https://t4.bcbits.com/stream/fc31077840e7d1639decfee0e08043e1/mp3-128/3375741264?p=0&ts=1718665048&t=aef0c211028a12bb0a76d387538b382ffb99908f&token=1718665048_d9096eca57bb49b99add4612a1829218e23fec34",
+        "poster": "https://f4.bcbits.com/img/a2656362217_16.jpg",
+        "duration": "3:58"
+    }
+]

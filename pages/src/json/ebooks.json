@@ -1,0 +1,31 @@
+{
+  "ebooks": [
+      {
+          "id": "654321",
+          "title": "Clube da Luta",
+          "author": "Chuck Palahniuk",
+          "description": "Um livro sobre um narrador sem nome que cria um clube de luta underground.",
+          "cover": "https://m.media-amazon.com/images/I/61OPHhrOv5L._SY466_.jpg",
+          "background": "https://culturar.blog/wp-content/uploads/2023/01/fight-club-film-1999.jpg",
+          "path": "../txt/Chuck Palahniuk - Clube da Luta [oficial].pdf"
+      },
+      {
+          "id": "123456",
+          "title": "Psicopata Americano",
+          "author": "Bret Easton Ellis",
+          "description": "A história de Patrick Bateman, um jovem bem-sucedido de Wall Street que leva uma vida dupla como assassino em série.",
+          "cover": "https://m.media-amazon.com/images/I/81CgFg7-S7L._SY466_.jpg",
+          "background": "https://macabra.tv/wp-content/uploads/2020/07/macabra-Pol%C3%AAmicas-sobre-Psicopata-Americano.png",
+          "path": "../txt/patrick-1.pdf"
+      },
+      {
+          "id": "789012",
+          "title": "O Lobo de Wall Street",
+          "author": "Jordan Belfort",
+          "description": "As memórias de Jordan Belfort, um corretor de ações de Nova York que se tornou notório por suas práticas de fraude e corrupção.",
+          "cover": "https://m.media-amazon.com/images/I/41+UBm5PF8L._SY445_SX342_.jpg",
+          "background": "https://media.licdn.com/dms/image/C4E12AQGcqUWCXahqKA/article-cover_image-shrink_720_1280/0/1628779631704?e=2147483647&v=beta&t=gptC5QfovTv1-rKQbTGcdzSDhU-GevHxlwgR-pP7vP0",
+          "path": "../txt/O-Lobo-de-Wall-Street-Jordan-Belfort.pdf"
+      }
+  ]
+}

@@ -1,0 +1,123 @@
+main > .audio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0;  /* Remove a margem */
+    width: 100%; /* Ocupa 100% da largura da tela */
+    border-bottom: 1px solid rgb(77, 64, 64);
+    
+}
+.player{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.fa-solid{
+    /* background-color: white; */
+    font-size: 35px;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+#play-pause-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+main > .player > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+main > .player >  .audio > img:hover {
+    transform: scale(1.1);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="range"] {
+    width: 250px;
+    cursor: pointer;
+    background-color: #333;
+    border-radius: 5px;
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #ff0000;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #ff0000;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#progress {
+    width: 400px;
+    background: #444;
+}
+
+.playing {
+    border: 2px solid green;
+}
+
+.player .pra-traz, .player .pra-frente {
+    cursor: pointer;
+    color: #ff6347;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+}
+#current-time , #duration{
+    font-size: 20px;
+    color: #ff6347 ;
+}
+.player .pra-traz:hover, .player .pra-frente:hover {
+    color: #e0e0e0;
+    transform: scale(1.2);
+}
+
+.poster {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.controls .fa-volume-high , .controls .fa-volume-mute{
+    color: #ff6347;
+    font-size: 20px;
+    border: none;
+}
+
+.controls .fa-volume-high:hover , .controls .fa-volume-mute:hover{
+    color: #e0e0e0;
+}
+.controls span {
+    color: #e0e0e0;
+    font-size: 14px;
+}

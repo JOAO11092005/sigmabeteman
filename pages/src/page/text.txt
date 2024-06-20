@@ -1,0 +1,10 @@
+// Inicializar Firebase
+var firebaseConfig = {
+    apiKey: "AIzaSyBKzKAbuuT3Mj7ydrwEmxzY_LpaBpxb8NE",
+    authDomain: "alien-craft-410814.firebaseapp.com",
+    projectId: "alien-craft-410814",
+    storageBucket: "alien-craft-410814.appspot.com",
+    messagingSenderId: "744102452074",
+    appId: "1:744102452074:web:48a692fd2a675eafd92313"
+};
+firebase.initializeApp(firebaseConfig);

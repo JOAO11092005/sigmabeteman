@@ -1,0 +1,94 @@
+body{
+    background: url(../img/fundo.webp) center center no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 100px;
+    height: 90px;
+    
+    background: url(../img/logo.png) center center no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+main{
+    width: 500px;
+    background-color: rgba(253, 253, 253, 0.809);
+    height: 520px;
+    display: flex;
+    border: 2px solid blue;
+    border-radius: 7px;
+    box-shadow: 10px 10px 50px 10px rgb(252, 248, 248);
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    flex-direction: column;
+}
+label{
+    font-size: 20px;
+    color: red;
+}
+input{
+    width: 300px;
+    height: 40px;
+    padding: 2px;
+    font-size: 17px;
+    /* border-radius: 7px; */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.usuario , .senha{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.botao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+}
+#botao{
+    width: 270px;
+    height: 40px;
+    padding: 2px;
+    
+    margin-top: 20px;
+    border-radius: 7px;
+    background-color: rgb(7, 217, 7);
+    transition: 0.7s ease-in-out;
+}
+#botao:hover{
+    background-color: red;
+    transition: 0.7s ease-in-out;
+}
+
+
+
+ /* Estilos CSS que você já possui */
+ .message {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}

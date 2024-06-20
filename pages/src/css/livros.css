@@ -1,0 +1,118 @@
+main > .livros{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    padding: 10px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    border-bottom: 1px solid rgb(77, 64, 64);
+}
+main > .livros > .livro{
+    width: 250px;
+    height: 400px;
+    background: url(https://m.media-amazon.com/images/I/61OPHhrOv5L._SY466_.jpg) center center no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    border: 3px solid rgb(54, 52, 52);
+}
+main > .livros .livro-2{
+    background: url(https://m.media-amazon.com/images/I/81CgFg7-S7L._SY466_.jpg) center center no-repeat;
+    background-size: cover;
+}
+main > .livros .livro-3{
+    background: url(https://m.media-amazon.com/images/I/41+UBm5PF8L._SY445_SX342_.jpg) center center no-repeat;
+    background-size: cover;
+}
+main > .livros > .livro:hover{
+    border: 3px solid white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.livro-info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.livro-info .info-content {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    /* height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.livro-info h2, .livro-info h3, .livro-info p {
+    margin: 10px 0;
+}
+
+.livro-info button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.livro-info button:hover {
+    background-color: darkred;
+}
+
+.livro-info.visible {
+    visibility: visible;
+    opacity: 1;
+}
+.livro-info .logo-autor {
+    width: 150px;
+    height: 250px;
+    border-radius:0px;
+    
+    background-position: center;
+    margin: 0 auto 20px;
+    background-size: cover;
+    background: url() center center no-repeat;
+    background-size: cover;
+}
+#pdf-container {
+    width: 100%;
+    text-align: center;
+}
+
+#pdf-canvas {
+    width: 100%;
+    border: 1px solid black;
+}
+
+
+@media (max-width: 646px){
+    main > .livros{
+        flex-direction: column;
+        height: 100%;
+    }
+    main > .livros > .livro{
+        width: 190px;
+        height: 290px;
+    }
+}

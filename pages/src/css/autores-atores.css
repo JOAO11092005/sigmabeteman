@@ -1,0 +1,92 @@
+main > .autores-atores{
+    width: 100%;
+    height: 300px;
+    background-color: #1e1e1e;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+main > .autores-atores > .autor{
+    width: 140px;
+    border-radius: 70px;
+    height: 140px;
+    background: url(https://www.bennington.edu/sites/default/files/styles/alumni_profile_640_x_460/public/sources/alumni/EastonEllis_Bret_640x460.jpg.webp?itok=uwhIEBTg) center center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.2s;
+}
+main > .autores-atores > .autor-2{
+    background: url("https://www.mensjournal.com/.image/t_share/MTk2MTM2MjQ3MjM4MDEwMDAx/main-chuckp.jpg") center center no-repeat;
+    background-size: cover;
+}
+main > .autores-atores > .autor-3{
+    background: url("https://resizer.iproimg.com/unsafe/640x/filters:format(webp)/https://assets.iprofesional.com/assets/jpg/2014/01/392457.jpg") center center no-repeat;
+    background-size: cover;
+}
+main > .autores-atores > .autor-4{
+    background: url("https://www.emmys.com/sites/default/files/styles/slider_images/public/McG-900x600.jpg?itok=_iqIDX04") center center no-repeat;
+    background-size: cover;
+}
+main > .autores-atores > .autor:hover{
+    border: 2px solid green;
+    transition: 0.2s;
+}
+
+.autores-atores {
+    width: 100%;
+    height: 300px;
+    background-color: #1e1e1e;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.autor {
+    width: 140px;
+    border-radius: 70px;
+    height: 140px;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.autor:hover {
+    transform: scale(1.1);
+    border: 2px solid green;
+}
+
+.autor-info-tooltip {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.autor-info-tooltip h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.autor-info-tooltip p {
+    margin: 5px 0;
+    color: white;
+    font-size: 14px;
+}
+
+@media (max-width: 646px){
+    main > .autores-atores {
+        flex-direction: column;
+        height: 800px;
+    }
+}

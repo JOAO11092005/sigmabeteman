@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation Beteman</title>
+    <link rel="shortcut icon" href="https://m.media-amazon.com/images/I/61Ul4k28CDL._SX218_CR0%2C0%2C218%2C218_.jpg"
+        type="image/x-icon">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/plataformas.css">
+    <link rel="stylesheet" href="./src/css/music.css">
+    <link rel="stylesheet" href="./src/css/livros.css">
+    <link rel="stylesheet" href="./src/css/filme.css">
+    <link rel="stylesheet" href="./src/css/autores-atores.css">
+    <script src="https://kit.fontawesome.com/9256129f72.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+     <header>
+        <h2 class="logo">
+            <!-- logo-do-site -->
+        </h2>
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <label for="checkbox" class="menu">
+            <div class="menu-hamburguer"></div>
+        </label>
+        <nav>
+            <ul class="notebook">
+                <li><a href="#livros">Livros</a></li>
+                <li><a href="#filmes-sigma">Filmes</a></li>
+                <li><a href="#Autores">Autores</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        
+        <!-- <section class="spaco">
+
+        </section> -->
+       
+        <section class="audio">
+            <div class="player">
+                <div class="pra-traz" id="prev">
+                    <i class="fa-solid fa-circle-left"></i>
+                </div>
+
+                <img id="play-pause-image" src="https://i1.sndcdn.com/artworks-000630142192-2rkumg-t500x500.jpg"
+                    alt="Music Poster" class="poster">
+
+                <div class="pra-frente" id="next">
+                    <i class="fa-solid fa-circle-right"></i>
+                </div>
+            </div>
+
+            <audio id="audio" src="https://t4.bcbits.com/stream/1d9e5504e8def9c029570c55ba76cea1/mp3-128/4114167957?p=0&ts=1718931791&t=535f0e2a6e116ca9869cb10945e395d6141c9393&token=1718931791_c63ed7a2fa8dc8fcc09d67aa745c66158d7d74ed"></audio>
+            <div class="controls">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress" value="0" max="100">
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+            </div>
+        </section>
+
+
+        <section class="livros" id="livros">
+            <div class="livro-1 livro" data-id="123456"></div>
+            <div class="livro-2 livro" data-id="654321"></div>
+            <div class="livro-3 livro" data-id="789012"></div>
+        </section>
+        
+
+        <section class="livro-info hidden">
+            <div class="info-content">
+                <div class="logo-autor"></div>
+                <h2 id="livro-title"></h2>
+                <h3 id="livro-author"></h3>
+                <p id="livro-description"></p>
+                <button id="ebook">Ler o Ebook</button>
+                <button id="close-info">Fechar</button>
+            </div>
+        </section>
+
+        
+        <section class="filmes" id="filmes-sigma">
+            <div class="poster-do-filme">
+                <div class="poster"></div>
+            </div>
+            <div class="infor-do-filme">
+                <h2 id="titulo-filme">Dezesseis Facadas</h2>
+                <p id="descricao-filme">O temido Assassino das Dezesseis Facadas retorna 35 anos após sua primeira onda
+                    de assassinatos para fazer outra vítima. Jamie, de 17 anos, acidentalmente viaja de volta no tempo
+                    até 1987, determinada a deter o assassino antes que ele comece a agir</p>
+                <a href="" id="plataformas-filme">
+                    
+                </a>
+                <div class="indicador"></div>
+                <button id="mudar-filme">Próximo Filme</button>
+            </div>
+        </section>
+
+        <section class="autores-atores" id="Autores">
+            <div class="autor autor-1"></div>
+            <div class="autor autor-2"></div>
+            <div class="autor autor-3"></div>
+            <div class="autor autor-4"></div>
+        </section>
+        <section class="plataformas">
+<a href="./src/page/index.html">site</a>
+        </section>
+    </main>
+    <a href=""></a>
+    <footer>
+        <div class="footer-content">
+            <div class="logo"></div>
+            <p>Construído por <span>Joao Paulo Betemam </span></p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                       
+            </div>
+        </div>
+        <div id="datetime">
+            <p id="year"></p>
+            <p id="date"></p>
+            <p id="time"></p>
+        </div>
+    </footer>
+    <script src="./src/js/auth.js"></script>
+    <script src="./src/js/indexs.js"></script>
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/music.js"></script>
+    <script src="./src/js/livro.js"></script>
+    <script src="./src/js/filme.js"></script>
+    <script src="./src/js/autor.js"></script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+
+</body>
+
+</html>

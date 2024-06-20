@@ -1,0 +1,20 @@
+/* ebook.css */
+
+#pdf-container {
+    width: 100%;
+    text-align: center;
+}
+
+#pdf-canvas {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.ebook.hidden {
+    display: none;
+}
+
+.ebook.visible {
+    display: block;
+}
+

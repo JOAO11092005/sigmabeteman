@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerenciador de Assinaturas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Gerenciador de Assinaturas</h1>
+
+    <div id="usersList" class="users-list">
+        <!-- Lista de usuários e assinaturas será exibida aqui -->
+    </div>
+    <button id="addUserBtn" class="button">Adicionar Usuário</button>
+
+    <h2>Gerenciar Plataformas</h2>
+    <div id="platformsList" class="platforms-list">
+        <!-- Lista de plataformas será exibida aqui -->
+    </div>
+    <button id="addPlatformBtn" class="button">Adicionar Plataforma</button>
+
+    <!-- Informações de Pagamento -->
+    <div class="payment-info">
+        <h2>Informações de Pagamento</h2>
+        <p>Valor Total das Plataformas: <span id="totalPlatformsValue">R$0.00</span></p>
+        <p>Valor a Ser Pago pelo Administrador: <span id="totalToBePaid">R$0.00</span></p>
+    </div>
+
+    <!-- Data e Hora Atuais -->
+    <div class="current-date-time">
+        <p>Data e Hora Atuais: <span id="currentDateTime"></span></p>
+    </div>
+</div>
+
+<div id="userModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Adicionar Usuário</h2>
+        <input type="text" id="usernameInput" placeholder="Nome do Usuário">
+        <div class="subscriptions">
+            <!-- Checkboxes de assinaturas serão inseridos aqui via JavaScript -->
+        </div>
+        <input type="number" id="priceInput" placeholder="Preço por mês">
+        <button id="saveUserBtn" class="button">Salvar</button>
+    </div>
+</div>
+
+<div id="platformModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Adicionar Plataforma</h2>
+        <input type="text" id="platformNameInput" placeholder="Nome da Plataforma">
+        <input type="number" id="platformPriceInput" placeholder="Preço por mês">
+        <button id="savePlatformBtn" class="button">Salvar</button>
+    </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

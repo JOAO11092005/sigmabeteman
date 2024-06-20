@@ -1,0 +1,142 @@
+main > .filmes{
+    width: 100%;
+    height: 600px;
+    background-color: #1e1e1e;
+    background-size: cover;
+    display: flex;
+    background: url(https://images.pexels.com/photos/670028/pexels-photo-670028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center center no-repeat;
+    background-size: cover;
+    /* position: relative; */
+}
+main > .filmes > .poster-do-filme{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.594);
+}
+
+@keyframes borderGlow {
+    0% {
+        box-shadow: 5px 5px 20px 5px red;
+    }
+    25% {
+        box-shadow: 5px 5px 20px 5px darkred;
+    }
+    50% {
+        box-shadow: 5px 5px 20px 5px crimson;
+    }
+    75% {
+        box-shadow: 5px 5px 20px 5px firebrick;
+    }
+    100% {
+        box-shadow: 5px 5px 20px 5px red;
+    }
+}
+
+main > .filmes .poster-do-filme > .poster{
+    width: 250px;
+    height: 400px;
+    
+    background: url(https://i.topflix.vc/testme/dle2/posts/2024-03/o5tWAiHfxEvu2z1qkJKU4gW1uPY.jpg) center center no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 20px 5px red;
+    width: 250px;
+    height: 400px;
+    box-shadow: 5px 5px 20px 5px red;
+    animation: borderGlow 2s infinite;
+}
+main > .filmes > .infor-do-filme{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.594);
+}
+main > .filmes > .infor-do-filme > h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+main > .filmes > .infor-do-filme > #descricao-filme{
+    width: 400px;
+    height: 108px;
+    margin-bottom: 20px;
+}
+main > .filmes > .infor-do-filme > #plataformas-filme{
+    margin-bottom: 10px;
+    background: url(https://canalcomq.com.br/images/noticias/7624/capa_edf55b2f0b935fdf3.png) center center no-repeat;
+    width: 200px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 5px;
+    border: 1px solid rgb(99, 95, 95);
+    transition: 0.5s;
+    cursor: pointer;
+}
+main > .filmes > .infor-do-filme > #plataformas-filme:hover{
+    border-color: white;
+    transition: 0.5s;
+}
+main > .filmes > .infor-do-filme > #mudar-filme{
+    margin-top: 50px;
+    bottom: 30px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    border: 1px solid rgb(92, 84, 84);
+    transition: 0.5s;
+    cursor: pointer;
+}
+main > .filmes > .infor-do-filme > #mudar-filme:hover{
+    border-color: white;
+    transition: 0.5s;
+}
+
+.indicador {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.indicador span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #888; /* Cor das bolinhas */
+    margin: 0 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.indicador span.ativo {
+    background-color: #333; /* Cor da bolinha ativa */
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
+}
+
+.indicador span:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+@media (max-width: 646px){
+    main > .filmes {
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 10px;
+    }
+    main > .filmes > .infor-do-filme > #descricao-filme{
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    main > .filmes > .infor-do-filme > #plataformas-filme{
+        
+        padding: 30px;
+    }
+}

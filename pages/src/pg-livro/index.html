@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de PDF</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9256129f72.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
+</head>
+<body>
+    <main>
+        <button id="prev-page-notebook" class="notebook"><i class="fa-solid fa-arrow-left"></i></button>
+        <div id="pdf-viewer">
+            <div class="pagina">
+                <span id="page-num">1</span> / <span id="page-count">1</span>
+                <button id="save-page">Salvar</button>
+            </div>
+            <div class="pdf-parte">
+                <canvas id="pdf-render"></canvas>
+                <div class="botao-do-celular">
+                    <button id="prev-page-mobile"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="next-page-mobile"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <button id="next-page-notebook" class="notebook"><i class="fa-solid fa-arrow-right"></i></button>
+    </main>
+    <footer>
+        
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

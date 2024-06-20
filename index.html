@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Betemans</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!-- Adicionando Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script>
+        // Suas configurações do Firebase
+        var firebaseConfig = {
+            apiKey: "AIzaSyBKzKAbuuT3Mj7ydrwEmxzY_LpaBpxb8NE",
+            authDomain: "alien-craft-410814.firebaseapp.com",
+            projectId: "alien-craft-410814",
+            storageBucket: "alien-craft-410814.appspot.com",
+            messagingSenderId: "744102452074",
+            appId: "1:744102452074:web:48a692fd2a675eafd92313"
+        };
+        // Inicializando Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    
+</head>
+<body>
+    <main>
+        <div class="logo"></div>
+        <div class="usuario">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" placeholder="Digite o seu usuario" required>
+        </div>
+        <div class="senha">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite a sua senha" required>
+        </div>
+        <div class="botao">
+            <button id="botao">Entrar</button>
+            <div id="message" class="message"></div>
+        </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

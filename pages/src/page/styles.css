@@ -1,0 +1,223 @@
+/* Reset básico e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding-bottom: 20px; /* Para evitar que o conteúdo seja cortado na parte inferior */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #333;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.user, .platform {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #444;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.user span, .platform span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.user span:last-child, .platform span:last-child {
+    margin-bottom: 0;
+}
+
+.subscriptions {
+    margin-bottom: 15px;
+}
+
+.subscriptions label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.subscriptions input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#totalPrice {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.current-date-time {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* Estilos para botões de ação */
+.user button, .platform button {
+    background-color: #1e90ff;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user button:hover, .platform button:hover {
+    background-color: #007bff;
+}
+
+.user button:last-child, .platform button:last-child {
+    margin-right: 0;
+}
+
+/* Estilos específicos para a seção de plataformas */
+.platforms-list {
+    margin-top: 20px;
+}
+
+.platform {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.platform-info {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.platform button {
+    background-color: #dc3545;
+}
+
+.platform button:hover {
+    background-color: #c82333;
+}
+
+/* Estilos específicos para a seção de clientes (usuários) */
+.users-list {
+    margin-top: 20px;
+}
+
+.user {
+    padding: 15px;
+    background-color: #444;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-info {
+    margin-bottom: 10px;
+}
+
+.user button {
+    background-color: #28a745;
+}
+
+.user button:hover {
+    background-color: #218838;
+}
+
+/* Valores a serem pagos */
+.payment-info {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.payment-info h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.payment-info p {
+    color: #ccc;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
